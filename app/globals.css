@@ -4,8 +4,8 @@
 
 @layer base {
   body {
-    background-color: #FAF8F5;
-    color: #1A1A18;
+    background-color: #F7F3ED;
+    color: #1A1917;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
@@ -16,34 +16,44 @@
 }
 
 /* ========================================================================== */
-/* AUTHENTIC HANDMADE COTTON PAPER & PARCHMENT TEXTURES (NO GRID BOXES)       */
+/* RICH HANDMADE COTTON PAPER & WARM TRAVERTINE PARCHMENT TEXTURES           */
 /* ========================================================================== */
 
-/* Pure Artisan Paper & Cotton Fiber Texture */
+/* Rich Artisan Parchment Paper Texture */
 .bg-texture-luxury {
-  background-color: #FAF7F2;
+  background-color: #F6F1EA;
   background-image: 
-    radial-gradient(circle at 10% 10%, rgba(201, 168, 107, 0.07) 0%, transparent 50%),
-    radial-gradient(circle at 90% 85%, rgba(201, 168, 107, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(245, 240, 230, 0.6) 0%, transparent 100%),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paperGrain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.15   0 0 0 0 0.12   0 0 0 0 0.08  0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paperGrain)'/%3E%3C/svg%3E");
-  background-size: auto, auto, auto, 240px 240px;
+    radial-gradient(ellipse at 15% 5%, rgba(201, 168, 107, 0.12) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 95%, rgba(201, 168, 107, 0.09) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 50%, rgba(250, 246, 238, 0.7) 0%, transparent 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='richPaperGrain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.18   0 0 0 0 0.14   0 0 0 0 0.09  0 0 0 0.075 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23richPaperGrain)'/%3E%3C/svg%3E");
+  background-size: auto, auto, auto, 220px 220px;
+}
+
+/* Warm Sandstone Tinted Section */
+.bg-texture-sandstone {
+  background-color: #EFE8DD;
+  background-image: 
+    radial-gradient(circle at 30% 10%, rgba(201, 168, 107, 0.15) 0%, transparent 60%),
+    radial-gradient(circle at 70% 90%, rgba(166, 128, 56, 0.10) 0%, transparent 60%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='sandGrain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.2   0 0 0 0 0.15   0 0 0 0 0.1  0 0 0 0.065 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23sandGrain)'/%3E%3C/svg%3E");
+  background-size: auto, auto, 240px 240px;
 }
 
 /* Dark Oxidized Charcoal Paper Texture */
 .bg-texture-dark {
-  background-color: #141412;
+  background-color: #141311;
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(201, 168, 107, 0.12) 0%, transparent 70%),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='darkGrain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 1 1 0 0   1 1 1 0 0   1 1 1 0 0  0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23darkGrain)'/%3E%3C/svg%3E");
+    radial-gradient(circle at 50% 0%, rgba(201, 168, 107, 0.15) 0%, transparent 70%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='darkGrain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 1 1 0 0   1 1 1 0 0   1 1 1 0 0  0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23darkGrain)'/%3E%3C/svg%3E");
   background-size: auto, 240px 240px;
 }
 
 /* Tactile Paper Card Material */
 .card-tactile {
-  background-color: #FFFFFF;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='cardPaperGrain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.1   0 0 0 0 0.1   0 0 0 0 0.1  0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23cardPaperGrain)'/%3E%3C/svg%3E");
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 10px 30px -10px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  background-color: #FCFAF7;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='cardPaperGrain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.1   0 0 0 0 0.1   0 0 0 0 0.1  0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23cardPaperGrain)'/%3E%3C/svg%3E");
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03), 0 12px 32px -10px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 @keyframes fadeIn {
